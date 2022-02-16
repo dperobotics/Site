@@ -23,10 +23,7 @@
       }
 
       iframe {
-        float:left;
         margin: 10%;
-        width:80%;
-      height:1002px;
       }
       #brand{
         font-family: fantasy;
@@ -37,6 +34,12 @@
 
       #logo{
         float: left;
+      }
+
+      .carousel-item{
+        width: 80%;
+        margin: 5%,10%,5%,10%;
+
       }
   
     </style>
@@ -70,11 +73,11 @@
               <a class="nav-link" aria-current="page" href="index.html">ABOUT US</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="order-form.html">ORDER VIDEO DGITIZATION</a>
+              <a class="nav-link" href="order-form.html">ORDER VIDEO DGITIZATION</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="gallery.html">GALLERY</a>
-            </li>
+                <a class="nav-link active" href="gallery.html">GALLERY</a>
+              </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Dropdown
@@ -99,13 +102,24 @@
     </nav>
 
     
-    <iframe
-      src="https://docs.google.com/forms/d/e/1FAIpQLSdq7RwusnOvX_L10lzkdP1-Q8fqx7kiJn9N69E9Eug4Ko3zfA/viewform?embedded=true"
-      frameborder="0"
-      marginheight="0"
-      marginwidth="0"
-      >Loading…</iframe
-    >
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="team-logo.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="fll.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script></script>
